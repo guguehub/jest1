@@ -1,0 +1,2 @@
+link git:
+https://github.com/guguehub/typescriptsolid.git
