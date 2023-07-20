@@ -1,0 +1,146 @@
+{
+    // Workbench
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.labelFormat": "short",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.enablePreview": false,
+    "workbench.sideBar.location": "left",
+    "workbench.list.smoothScrolling": true,
+
+    // Explorer
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": true,
+
+    // Editor and breadcrumbs
+    "breadcrumbs.enabled": true,
+    "editor.renderControlCharacters": false,
+    "editor.tabSize": 2,
+    "editor.renderLineHighlight": "gutter",
+    "editor.rulers": [80, 120],
+    "editor.minimap.enabled": true,
+    "editor.fontSize": 16,
+    "editor.detectIndentation": true,
+    "editor.snippetSuggestions": "top",
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.localityBonus": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.formatOnPaste": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.mouseWheelScrollSensitivity": 2,
+    "editor.smoothScrolling": true,
+    "editor.mouseWheelZoom": true,
+    "editor.linkedEditing": true,
+    "editor.fontFamily": "Operator Mono Lig Book, '=>', Fira Code",
+    "editor.fontLigatures": true,
+    //"editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll": true
+    },
+    "editor.suggestSelection": "first",
+
+    // Git
+    "git.enableSmartCommit": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+
+    // Debug
+    "debug.console.fontSize": 22,
+
+    // Files and search
+    "files.defaultLanguage": "{activeEditorLanguage}",
+    "files.exclude": {
+      "USE_GITIGNORE": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/coverage": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.build": true,
+      "**/.gh-pages": true
+    },
+
+    // Terminal
+    "terminal.integrated.copyOnSelection": false,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontFamily": "'Operator Mono Lig Book', 'Fira Code', 'SF Mono', Consolas, 'Source Code Pro', 'Dank Mono', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "terminal.integrated.env.linux": {
+      // "PORT": "4000"
+    },
+
+    // Javascript & TypeScript
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "javascript.validate.enable": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true,
+    "[javascript]": {
+      "editor.suggestSelection": "recentlyUsed",
+      "editor.suggest.showKeywords": false
+    },
+
+    // Emmet
+    "emmet.syntaxProfiles": {
+      "javascript": "jsx"
+    },
+    "emmet.includeLanguages": {
+      "django-html": "html",
+      "javascript": "javascriptreact",
+      "typescript": "typescriptreact"
+    },
+
+    // Code runner
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.preserveFocus": false,
+    "code-runner.executorMap": {
+      "python": "python3 -u",
+      "typescript": "npx ts-node --files --transpile-only"
+    },
+
+    // Material icon theme extension
+    "material-icon-theme.hidesExplorerArrows": true,
+    // "material-icon-theme.folders.theme": "classic",
+    "material-icon-theme.folders.color": "#6273a6",
+
+    "editor.inlineSuggest.enabled": true,
+    "bracketPairColorizer.depreciation-notice": false,
+    "github.copilot.enable": {
+      "*": true,
+      "yaml": false,
+      "plaintext": false,
+      "markdown": false,
+      "typescript": false
+    },
+    "redhat.telemetry.enabled": false,
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "cSpell.userWords": [
+      "boleano",
+      "cnpj",
+      "comercial",
+      "datasource",
+      "Melim",
+      "middlewares",
+      "nginx",
+      "openapi",
+      "postgres",
+      "Totvs",
+      "tsyringe",
+      "Tsyrynge",
+      "typeorm"
+    ],
+    "cSpell.language": "en,pt-BR",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.guides.bracketPairs": true,
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "typescript.tsdk": "node_modules/typescript/lib"
+  }

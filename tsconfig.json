@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2016", "ESNext","DOM"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "rootDir": "./src",  //alterado rootdir para source
+    "types": ["node"],
+    "typeRoots": [
+      "@types",
+      "./node_modules/@types"
+    ],
+    "resolveJsonModule": true,
+    "removeComments": true,  //inclusa a opção para remover comentarios na compilaçao
+    "noEmitOnError": true, // opcao inclusa para nao compilar se tiver erros no codigo
+    "allowJs": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "sourceMap": true
+  },
+  "include": [
+    "./src"
+  ]
+}
