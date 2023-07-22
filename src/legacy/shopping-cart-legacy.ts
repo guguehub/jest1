@@ -1,9 +1,9 @@
 //import { CartItem } from './interfaces/cart-item';
 
-import { CartItem } from './interfaces/cart-item';
-import { OrderStatus } from './interfaces/order-status';
+type CartItem = { name: string; price: number };
+type OrderStatus = 'open' | 'closed';
 
-export class ShoppingCart {
+export class ShoppingCartLegacy {
   private readonly _items: CartItem[] = [];
   private _orderStatus: OrderStatus = 'open';
 
@@ -54,3 +54,16 @@ export class ShoppingCart {
     this._items.length = 0;
   }
 }
+
+const shoppingCart = new ShoppingCartLegacy();
+
+shoppingCart.addItem({ name: 'amaciante', price: 10 });
+shoppingCart.addItem({ name: 'lapis', price: 5 });
+shoppingCart.addItem({ name: 'caderno', price: 8 });
+
+//shoppingCart.clear();
+console.log(shoppingCart.items);
+shoppingCart.checkout();
+
+console.log('o valor total do pedido: ' + shoppingCart.total());
+console.log(shoppingCart.orderStatus);
