@@ -41,7 +41,7 @@
 
     // Git
     "git.enableSmartCommit": true,
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
 
     // Debug
     "debug.console.fontSize": 22,

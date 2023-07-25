@@ -13,8 +13,11 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "no-console": "off",
+    "no-console": "warn",
     "prettier/prettier": "error",
-    "@typescript-eslint/no-unused-vars": 0
+    "@typescript-eslint/no-unused-vars": 0,
+    "endOfLine: 'off'"
+
+
   }
 }
