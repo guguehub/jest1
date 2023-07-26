@@ -1,7 +1,7 @@
 import { OrderStatus } from './interfaces/order-status';
 import { ShoppingCart } from './shopping-cart';
-import { Persistency } from './persistensy';
-import { Messaging } from './messaging'
+import { Persistency } from '../services/persistensy';
+import { Messaging } from '../services/messaging'
 
 export class Order {
   private _orderStatus: OrderStatus = 'open';
@@ -22,6 +22,7 @@ export class Order {
       return;
     }
 
+this._orderStatus = 'closed'
     this.messaging.sendMessage(
       `seu pedido com total de ${this.cart.total()} foi recebido`,
     );
