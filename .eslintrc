@@ -16,7 +16,8 @@
     "no-console": "warn",
     "prettier/prettier": "error",
     "@typescript-eslint/no-unused-vars": 0,
-    "endOfLine: 'off'"
+    "endOfLine: 'off' ",
+    "semi":"error",
 
 
   }
