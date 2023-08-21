@@ -1,9 +1,15 @@
 //spec testes unitarios, it testes ingegraçao
-it('descriçao do teste (IT)', () => {
-  const number = 1;
-  expect(number).toBe(1);
+
+describe( 'Teste 1 , numero', () => {
+  it('it should return 1 ', () => {
+    const number = 1;
+    expect(number).toBe(1)
+  });
 });
-test('teste feito com TEST', () => {
-  const nome = "Luis";
-  expect(nome).toBe('Luis');
-});
+
+describe('this test should return (name)= luiz', () => {
+  test('teste feito com TEST', () => {
+    const nome = "Luis";
+    expect(nome).toBe('Luis');
+  });
+})
