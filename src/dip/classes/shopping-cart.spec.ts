@@ -21,6 +21,15 @@ const createCartItem = (name: string, price: number) => {
 };
 
 // criar um sut com totalwithdiscount
+const createSutWithProducts = () => {
+  const { sut, discountMock }  = createSut();
+  const cartItem1 = createCartItem('Camiseta', 40);
+  const cartItem2 = createCartItem('Caneta', 1);
+  sut.addItem(cartItem1);
+  sut.addItem(cartItem2);
+ 
+  return { sut, discountMock }
+}
 
 describe('Shopping cart test', () => {
 it('should be an empty cart when no product is added', () => {
@@ -30,23 +39,36 @@ expect(sut.isEmpty()).toBe(true);
 });
 
 it('Should have 2 cart items', () => {
-  const { sut }  = createSut();
-  const cartItem1 = createCartItem('Camiseta', 40);
-  const cartItem2 = createCartItem('Caneta', 1);
-  sut.addItem(cartItem1);
-  sut.addItem(cartItem2);
-  expect(sut.items.length).toBe(2);
+  //all raw data converted to and receiving in object sut from factory with all items.
+  const { sut }  = createSutWithProducts();
+  expect(sut.total()).toBe(41);
+  expect(sut.totalWithDiscount()).toBe(41);
+  
   });
 
   it('Should test Total and totalWithDiscount', () => {
-    const { sut }  = createSut();
-    const cartItem1 = createCartItem('Camiseta', 40);
-    const cartItem2 = createCartItem('Caneta', 1);
-    sut.addItem(cartItem1);
-    sut.addItem(cartItem2);
+    const { sut }  = createSutWithProducts();
     expect(sut.total()).toBe(41);
     expect(sut.totalWithDiscount()).toBe(41)
-    });
+  });
+
+  it('Should add products and clear cart', () => {
+    const { sut }  = createSutWithProducts();
+    expect(sut.items.length).toBe(2)
+    sut.clear();
+    expect(sut.items.length).toBe(0);
+    expect(sut.isEmpty()).toBe(true);
+  });
+
+  it('Should Remove products and clear cart', () => {
+    const { sut }  = createSutWithProducts();
+    expect(sut.items.length).toBe(2)
+    sut.removeItem(1);
+    expect(sut.items.length).toBe(1);
+    sut.removeItem(0);
+    expect(sut.isEmpty()).toBe(true);
+  });
+  
 
 
 });
