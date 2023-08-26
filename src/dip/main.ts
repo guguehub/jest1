@@ -21,7 +21,7 @@ import { MessagingProtocol } from './classes/interfaces/messaging-protocol';
 const fiftyPercentDiscount = new FiftyPercentDiscount();
 //const tenPercentDiscount = new TenPercentDiscount();
 const noDiscount = new NoDiscount();
-
+//escrevo o que quiser pra lembrar comentario
 const shoppingCart = new ShoppingCart(noDiscount);
 const messaging = new Messaging();
 const persistency = new Persistency();

@@ -10,15 +10,14 @@ export class IndividualCustomer
   firstName: string;
   lastName: string;
   cpf: string;
-  cnpj: string;
+
   constructor(firstName: string,
     lastName: string,
     cpf: string,) {
       this.firstName = firstName;
       this.lastName = lastName;
       this.cpf = cpf;
-      this.cnpj = '';
-    }
+    };
   getName(): string {
     return this.firstName + ' ' + this.lastName;
     //throw new Error('Method not implemented.');
@@ -26,8 +25,8 @@ export class IndividualCustomer
   getIdn(): string {
     return this.cpf + ' ' + this.lastName;
     //throw new Error('Method not implemented.');
-  }
-}
+  };
+};
 export class EnterpriseCustomer implements 
 EnterpriseCustomerProtocol, CustomerOrder {
   name: string;
@@ -43,4 +42,4 @@ EnterpriseCustomerProtocol, CustomerOrder {
   getIdn(): string {
     return this.cnpj;
   }
-}
+};
