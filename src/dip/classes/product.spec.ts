@@ -19,7 +19,7 @@ afterEach(() => jest.clearAllMocks());
     expect(sut.price).toBeCloseTo(49);
     //expect(sut).toHaveProperty('name', 'price')
 
-    
+  
 
   });
 
